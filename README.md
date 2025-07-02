@@ -28,7 +28,7 @@ This project demonstrates a full-fledged **video streaming platform** designed w
 
 ## 🧭 Architecture Diagram
 
-[Architecture Diagram](./docs/aws-video-streaming-architecture.png)  
+[Architecture Diagram](./docs/aws-video-streaming-architecture.PNG)  
 *(You can create this diagram using [draw.io](https://draw.io) or [Lucidchart](https://lucidchart.com), then upload it to the `/docs/` folder.)*
 
 ---
