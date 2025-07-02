@@ -28,7 +28,7 @@ This project demonstrates a full-fledged **video streaming platform** designed w
 
 ## 🧭 Architecture Diagram
 
-![Architecture Diagram](./docs/aws-video-streaming-architecture.png)  
+[Architecture Diagram](./docs/aws-video-streaming-architecture.png)  
 *(You can create this diagram using [draw.io](https://draw.io) or [Lucidchart](https://lucidchart.com), then upload it to the `/docs/` folder.)*
 
 ---
@@ -49,9 +49,3 @@ This project demonstrates a full-fledged **video streaming platform** designed w
    ```bash
    git clone https://github.com/tusharyadav/aws-video-streaming-platform.git
    cd aws-video-streaming-platform
-
-2. **Deploy Script:**
-
-   aws cloudformation create-stack --stack-name VideoVPC \
-   --template-body file://templates/vpc.yaml \
-   --capabilities CAPABILITY_NAMED_IAM
