@@ -19,7 +19,7 @@ This project demonstrates a full-fledged **video streaming platform** designed w
 | Compute               | EC2, Auto Scaling                    |
 | Networking            | VPC, Subnets, Route 53, ELB          |
 | Storage & CDN         | S3, CloudFront                       |
-| Security              | ACM (SSL/TLS), IAM                   |
+| Security              | ACM (SSL/TLS)                  |
 | Monitoring            | CloudWatch                           |
 | Notifications         | SNS                                  |
 | Infrastructure as Code| CloudFormation                       |
