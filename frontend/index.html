@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Stream Your Favorite Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MovieFlix</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">My List</a>
+        </div>
+        <div class="search-user">
+            <div class="search">
+                <input type="text" placeholder="Search..." id="searchInput">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="user-profile">
+                <img src="https://api.dicebear.com/6.x/fun-emoji/svg?seed=MovieFlix" alt="Profile">
+            </div>
+        </div>
+    </nav>
+
+ <header class="hero" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Oppenheimer+_+New+Trailer.mp4">
+        <div class="hero-content">
+            <h1>Oppenheimer</h1>
+            <p>The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.</p>
+            <div class="hero-buttons">
+                <button class="play-btn"><i class="fas fa-play"></i> Play</button>
+                <button class="info-btn"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="movie-section">
+            <h2>Trending Now</h2>
+            <button class="scroll-btn left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-btn right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="movie-row">
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/the+flash+trailer.mp4">
+    <img src="https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg" alt="flash">
+                    <div class="movie-info">
+                        <h3>flash</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>1h 54m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Mission_+Impossible+%E2%80%93+The+Final+Reckoning+_+Official+Trailer+(2025+Movie)+-+Tom+Cruise.mp4">
+    <img src="https://image.tmdb.org/t/p/w500/NNxYkU70HPurnNCSiCjYAmacwm.jpg" alt="Mission: Impossible - Dead Reckoning">
+    <div class="movie-info"> <h3>Mission: Impossible - Dead Reckoning</h3>
+        <div class="movie-meta">
+            <span>2023</span>
+            <span>2h 43m</span>
+        </div>
+    </div>
+</div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/CREED+III+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/cvsXj3I9Q2iyyIo95AecSd1tad7.jpg" alt="Creed 3">
+                    <div class="movie-info">
+                        <h3>Creed 3</h3>
+                        <div class="movie-meta">
+                            <span>2021</span>
+                            <span>2h 35m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Marvel+Studios%E2%80%99+Guardians+of+the+Galaxy+Vol.+3+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="Guardians of the Galaxy Vol. 3">
+                    <div class="movie-info">
+                        <h3>Guardians of the Galaxy Vol. 3</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 30m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>Popular on MovieFlix</h2>
+            <button class="scroll-btn left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-btn right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="movie-row">
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/John+Wick_+Chapter+4+(2023+Movie)+Official+Trailer+%E2%80%93+Keanu+Reeves%2C+Donnie+Yen%2C+Bill+Skarsg%C3%A5rd.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg" alt="John Wick: Chapter 4">
+                    <div class="movie-info">
+                        <h3>John Wick: Chapter 4</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 49m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/The+Super+Mario+Bros.+Movie+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg" alt="The Super Mario Bros. Movie">
+                    <div class="movie-info">
+                        <h3>The Super Mario Bros. Movie</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>1h 32m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Avatar_+The+Way+of+Water+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt="Avatar: The Way of Water">
+                    <div class="movie-info">
+                        <h3>Avatar: The Way of Water</h3>
+                        <div class="movie-meta">
+                            <span>2022</span>
+                            <span>3h 12m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Inception+(2010)+Official+Trailer+%231+-+Christopher+Nolan+Movie+HD.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg" alt="Inception">
+                    <div class="movie-info">
+                        <h3>Inception</h3>
+                        <div class="movie-meta">
+                            <span>2010</span>
+                            <span>2h 28m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>Must Watch Movies</h2>
+            <button class="scroll-btn left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-btn right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="movie-row">
+                 <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Marvel+Studios%E2%80%99+Guardians+of+the+Galaxy+Vol.+3+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="Guardians of the Galaxy Vol. 3">
+                    <div class="movie-info">
+                        <h3>Guardians of the Galaxy Vol. 3</h3>
+                        <div class="movie-meta">
+                            <span>2008</span>
+                            <span>2h 32m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/The+Mandalorian+_+Official+Trailer+_+Disney%2B+_+Streaming+Nov.+12.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/9VdgIj9R9Z9dfDoO76v57V6FF6y.jpg" alt="tar wars: The mandalorian">
+                    <div class="movie-info">
+                        <h3>star wars: The mandalorian</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 21m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Marvel+Studios%E2%80%99+Ant-Man+and+The+Wasp_+Quantumania+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg" alt="Ant-Man and the Wasp: Quantumania">
+                    <div class="movie-info">
+                        <h3>Ant-Man and the Wasp: Quantumania</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 20m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/EVIL+DEAD+RISE+-+Official+Trailer+-+(Redband).mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/7bWxAsNPv9CXHOhZbJVlj2KxgfP.jpg" alt="Evil dead rise">
+                    <div class="movie-info">
+                        <h3>Evil dead rise</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 15m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>New Releases</h2>
+            <button class="scroll-btn left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-btn right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="movie-row">
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/FAST+X+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/fiVW06jE7z9YnO4trhaMEdclSiC.jpg" alt="fast X">
+                    <div class="movie-info">
+                        <h3>Fast X</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 7m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Transformers_+Rise+of+the+Beasts+_+Official+Trailer+(2023+Movie).mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/gPbM0MK8CP8A174rmUwGsADNYKD.jpg" alt="Extraction 2">
+                    <div class="movie-info">
+                        <h3>Transformers: Rise of the Beasts</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 3m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/Marvel+Studios%E2%80%99+Ant-Man+and+The+Wasp_+Quantumania+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg" alt="Ant-Man and the Wasp: Quantumania">
+                    <div class="movie-info">
+                        <h3>Ant-Man and the Wasp: Quantumania</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 5m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/SAW+X+(2023)+Official+Trailer+%E2%80%93+Tobin+Bell.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/aQPeznSu7XDTrrdCtT5eLiu52Yu.jpg" alt="Saw X">
+                    <div class="movie-info">
+                        <h3>Saw X</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>1h 37m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>Coming Soon</h2>
+            <button class="scroll-btn left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-btn right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="movie-row">
+                <div class="movie-card" data-video-url="https://awsbucketforlambdafors3.s3.us-east-1.amazonaws.com/RUBY+GILLMAN%2C+TEENAGE+KRAKEN+_+Official+Trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/kgrLpJcLBbyhWIkK7fx1fM4iSvf.jpg" alt="Ruby gillman teenage kraken">
+                    <div class="movie-info">
+                        <h3>Ruby gillman teenage kraken</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 34m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card" data-video-url="s3://awsbucketforlambdafors3/the flash trailer.mp4">
+                    <img src="https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg" alt="Flash">
+                    <div class="movie-info">
+                        <h3>flash</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>2h 15m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>MovieFlix</h4>
+                <p>Watch your favorite movies and TV shows anytime, anywhere.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MovieFlix. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="video-player-overlay">
+        <div class="video-player-container">
+            <h2 class="video-title">Movie Title</h2>
+            <button class="close-player">
+                <i class="fas fa-times"></i>
+            </button>
+            <video class="video-player">
+                <!-- Video source will be set dynamically -->
+            </video>
+            <div class="loading-spinner"></div>
+            <div class="custom-controls">
+                <div class="progress-bar">
+                    <div class="progress-bar-filled"></div>
+                </div>
+                <div class="controls-row">
+                    <div class="left-controls">
+                        <button class="control-button play-pause">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="control-button rewind">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button class="control-button forward">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                        <div class="volume-control">
+                            <button class="control-button volume">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            <input type="range" class="volume-slider" min="0" max="100" value="100">
+                        </div>
+                        <span class="time-display">00:00 / 00:00</span>
+                    </div>
+                    <div class="right-controls">
+                        <div class="quality-selector">
+                            <button class="quality-button">HD</button>
+                            <div class="quality-options">
+                                <div class="quality-option" data-quality="1080">1080p</div>
+                                <div class="quality-option" data-quality="720">720p</div>
+                                <div class="quality-option" data-quality="480">480p</div>
+                            </div>
+                        </div>
+                        <button class="control-button fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-results-overlay">
+        <div class="search-results-container">
+            <div class="search-header">
+                <h2>Search Results</h2>
+                <button class="close-search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results-grid">
+                <!-- Results will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
